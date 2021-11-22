@@ -17,9 +17,9 @@ body {
 .navbar{
  
     position: fixed;
-    background: rgb(197, 197, 69);
+    background: rgb(17, 16, 16);
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     font-family: sans-serif;
 }    
  
@@ -33,10 +33,16 @@ body {
 }
  
 .navbar .logo a {
-    color: rgb(137, 20, 148);
+    color: rgb(244, 237, 245);
     font-size: 35px;
-    font-weight: 600px;
+    font-weight: 600;
+    text-decoration: none;
  
+}
+
+.navbar .logo a span {
+    color: crimson;
+
 }
  
 .navbar .menu li {
@@ -46,10 +52,17 @@ body {
  
 .navbar .menu li a{
  
-    color: black;
+    color: rgb(245, 237, 237);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    text-decoration: none;
+    transition: color 0.3 ease;
+ 
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
  
 }
 
@@ -79,6 +92,12 @@ body {
 
 .home .home-content .text-3{
     font-size: 40px;
-    margin: 5px 0 : 
+    margin: 5px 0 ;
+}
+
+.home .home-content .text-3 span{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+
 }
 
