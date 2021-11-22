@@ -56,11 +56,8 @@ body {
 
 .home{
     display: flex;
-    background: rgb(184, 22, 22);
     height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
     color: white;
-    min-height: 500px;
+
 }
 
