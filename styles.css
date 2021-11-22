@@ -23,7 +23,7 @@ body {
     font-family: sans-serif;
 }    
  
-.navbar .maxwidth{
+.navbar .max-width{
  
     display: flex;
     align-items: center;
@@ -51,3 +51,16 @@ body {
     margin-left: 25px;
  
 }
+
+/* Home Section Styling */
+
+.home{
+    display: flex;
+    background: rgb(184, 22, 22);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 500px;
+}
+
