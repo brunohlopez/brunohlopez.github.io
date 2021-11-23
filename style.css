@@ -162,7 +162,7 @@ section .title::after{
 }
 
 
-/* home section styling */
+/* home section styling */ 
 .home{
     display: flex;
     background: url("images/gradpic.jpg") no-repeat center;
