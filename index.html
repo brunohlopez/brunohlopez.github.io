@@ -1,40 +1,201 @@
-<html lang = "en">
+<!DOCTYPE html>
+<!-- Created By Bruno Lopez -->
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name="viewport" content="width-device-width, inital-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https:code.jquery.com/jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
-
-  <nav class="navbar">
-      <div class = 'max-width'>
-          <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-          <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-  </nav>
- 
-  <!-- Home Section Start -->
-  <section class="home" id="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1">Hello, my name is</div>
-        <div class="text-2">Bruno Lopez</div>
-        <div class="text-3">I am a <span>Data Analyst</span></div>
-      </div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-  </section>
-  
-  <P> A bunch of random text</P>
-  <p> Now what else</p>
-  <script src="script.js" ></script>
- 
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Bruno Lopez </div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="https://www.linkedin.com/in/brunolopez32/">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profilePic.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Bruno and I'm a <span class="typing-2"></span></div>
+                    <p>I am a Research Data Ananlyst at Stanford University who loves everything data. 
+                       I use that love of data along with my Earth Science background to answer questions
+                       about Food Security and the Environment.
+                       
+                    </p>
+                    <a href="Resume/Bruno Lopez Resume.pdf">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>I enjoy data analytics so much that I spent a lot of time
+                       learning how to program outside of my degree. I first learned
+                       R doing research and now I use it for my statistical analysis,
+                       dashboard creation and data cleaning. I learned Python for general
+                       purpose programming. I use it to run Machine Learning Models, 
+                       automate data extraction and create reports. I learned SQL (MySQL) 
+                       because I enjoyed using it in my Advanced GIS. I use it to pull data 
+                       into an easy to read format for my analysis. I learned Javascript HTML 
+                       and CSS because I thought it would be cool and it helped me make this website.
+                       I learned Javascript using Google Earth Engine and to make my website interactive. 
+                       I learnerd Google Earth Engine/GIS for work and enjoy it's use for my remote
+                       sensing work.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>R</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line r"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Google Earth Engine/GIS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line gee"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML/CSS/Javascript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line hcj"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Send me an email if you're looking
+                        for a Data Analyst/Data Scientist on your team or if you would like to get in touch with me
+                        about any of my Data Science projects .
+                    </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Bruno Lopez</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">San Lorenzo, CA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">brunolopez15@yahoo.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.codingnepalweb.com">Bruno Lopez</a> 
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
