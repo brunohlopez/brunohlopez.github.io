@@ -21,7 +21,13 @@ body {
     width: 100%;
     padding: 5px 0;
     font-family: sans-serif;
+    transition: all 0.3s ease;
 }    
+
+.navbar.sticky{
+    padding: 5px 0;
+    background: rgb(214, 9, 9);
+}
  
 .navbar .max-width{
  
@@ -43,6 +49,10 @@ body {
 .navbar .logo a span {
     color: crimson;
 
+}
+
+.navbar.sticky .logo a span{
+    color: white
 }
  
 .navbar .menu li {
