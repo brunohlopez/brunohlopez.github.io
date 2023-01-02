@@ -328,6 +328,26 @@ section .title::after{
     width: 95%;
 }
 
+.skills-content .right .r::before{
+    width: 90%;
+}
+
+.skills-content .right .gis::before{
+    width: 85%;
+}
+
+.skills-content .right .ml::before{
+    width: 80%;
+}
+
+.skills-content .right .sql::before{
+    width: 70%;
+}
+
+.skills-content .right .hcj::before{
+    width: 60%;
+}
+
 
 /* contact section styling */
 .contact .title::after{
