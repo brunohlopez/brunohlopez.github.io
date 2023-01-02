@@ -387,7 +387,7 @@ section .title::after{
 }
 
 
-.contact .contact-content .right p{
+.contact .contact-content .row p{
     text-align: justify;
 }
 
