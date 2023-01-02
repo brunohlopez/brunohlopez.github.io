@@ -388,7 +388,7 @@ section .title::after{
 
 
 .contact .contact-content .right p{
-    text-align: right;
+    text-align: justify;
 }
 
 .contact .skills-content .right a:hover{
