@@ -11,6 +11,25 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* Text shadow for better readability */
+.home-content .text-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the color and blur to your liking */
+}
+
+/* Semi-transparent box behind text */
+.home-content {
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency to your liking */
+    padding: 10px; /* Adjust the padding to control the box size */
+    display: inline-block; /* Keeps the background box tight around the text */
+}
+
+.home-content .text-2 {
+    color: #ffffff; /* This sets the text color to white */
+    /* Other styles */
+}
+
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -126,6 +145,14 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+
+.navbar .menu {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 20px; /* Padding around the menu */
+    border-radius: 5px; /* Optional: Rounds the corners of the background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
+}
+
 
 /* menu btn styling */
 .menu-btn{
@@ -347,6 +374,20 @@ section .title::after{
 .skills-content .right .hcj::before{
     width: 60%;
 }
+
+/* Apply bullet points only within the skills content */
+.skills-content .skill-item ul {
+    list-style-type: disc; /* Enables disc-style bullet points */
+    margin-left: 20px; /* Adjusts spacing to the left of bullet points */
+    padding-left: 0; /* Removes padding to align bullets properly */
+}
+
+.skills-content .skill-item li {
+    margin-bottom: 10px; /* Adds space between bullet points for readability */
+    text-align: left; /* Ensures text alignment is consistent */
+    line-height: 1.6; /* Adjusts line height for better readability */
+}
+
 
 
 /* contact section styling */
