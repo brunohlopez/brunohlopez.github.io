@@ -425,10 +425,13 @@ section .title::after{
 }
 .contact .contact-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px; /* Add gap between columns */
 }
 .contact .contact-content .column {
-    width: calc(50% - 30px);
+    flex: 1; /* Allow columns to take equal space */
+    min-width: 300px; /* Ensure columns don't shrink too much */
 }
 .contact .contact-content .text {
     font-size: 20px;
@@ -443,11 +446,11 @@ section .title::after{
 }
 .contact .contact-content .row {
     display: flex;
-    height: 65px;
     align-items: center;
+    margin-bottom: 10px;
 }
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .contact .contact-content .row i {
     font-size: 25px;
@@ -459,17 +462,25 @@ section .title::after{
 .contact .contact-content .info .sub-title {
     color: #333;
 }
-
+.contact .contact-content .right .publication-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.contact .contact-content .right .publication-item h3 {
+    margin-bottom: 10px;
+}
+.contact .contact-content .right .publication-item p {
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left;
+}
 .contact .contact-content .right p {
     text-align: justify;
 }
-
-.contact .skills-content .right a:hover {
-    color: crimson;
-    background: none;
-}
-
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -478,7 +489,6 @@ section .title::after{
         width: 350px;
     }
 }
-
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
