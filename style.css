@@ -11,7 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 /* Text shadow for better readability */
 .home-content .text-2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the color and blur to your liking */
@@ -29,7 +28,6 @@ html{
     /* Other styles */
 }
 
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -40,7 +38,6 @@ html{
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -61,7 +58,6 @@ section{
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
-    position: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -153,7 +149,6 @@ section .title::after{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
 }
 
-
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -188,7 +183,6 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
 
 /* home section styling */ 
 .home{
@@ -290,9 +284,7 @@ section .title::after{
     background: none;
 }
 
-
 /* skills section styling */
-
 .skills .title::after{
     content: "What I Know";
 }
@@ -418,6 +410,7 @@ section .title::after{
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 /* contact section styling */
 .contact .title::after {
