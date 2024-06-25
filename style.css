@@ -380,6 +380,11 @@ section .title::after{
     line-height: 1.6; /* Adjusts line height for better readability */
 }
 
+/* Reduce spacing between sections */
+section {
+    padding: 60px 0; /* Reduced from 100px to 60px */
+}
+
 /* projects section styling */
 .projects .title::after {
     content: "my work";
@@ -401,6 +406,15 @@ section .title::after{
 }
 .projects .project-item h3 {
     margin-bottom: 10px;
+    font-size: 24px;
+}
+.projects .project-item h3 a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.projects .project-item h3 a:hover {
+    color: crimson;
 }
 .projects .project-item p {
     color: #666;
@@ -410,6 +424,7 @@ section .title::after{
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 }
 
 /* contact section styling */
