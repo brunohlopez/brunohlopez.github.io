@@ -1,73 +1,71 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
+$(document).ready(function () {
+
+    // sticky navbar + scroll-up button
+    $(window).scroll(function () {
+        if (this.scrollY > 60) {
+            $('.navbar').addClass('sticky');
+        } else {
+            $('.navbar').removeClass('sticky');
         }
-        
-        // scroll-up button show/hide script
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
+        if (this.scrollY > 500) {
+            $('.scroll-up-btn').addClass('show');
+        } else {
+            $('.scroll-up-btn').removeClass('show');
         }
     });
 
-    // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
+    // scroll to top
+    $('.scroll-up-btn').click(function () {
+        $('html').css('scrollBehavior', 'auto');
+        $('html').animate({ scrollTop: 0 }, function () {
+            $('html').css('scrollBehavior', 'smooth');
+        });
     });
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
+    // mobile menu toggle
+    $('.hamburger').click(function () {
+        $('.navbar .menu').toggleClass('open');
     });
 
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+    // close mobile menu on link click
+    $('.navbar .menu li a').click(function () {
+        $('.navbar .menu').removeClass('open');
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Data Scientist", "Former Stanford Researcher", "Musician", "Geospatial Analyst", "1st Gen College Student", "ML/AI Enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
+    // photo carousel
+    var currentSlide = 0;
+    var slides = $('.carousel-slide');
+    var dots = $('.dot');
+
+    function goToSlide(index) {
+        slides.removeClass('active');
+        dots.removeClass('active');
+        slides.eq(index).addClass('active');
+        dots.eq(index).addClass('active');
+        currentSlide = index;
+    }
+
+    setInterval(function () {
+        goToSlide((currentSlide + 1) % slides.length);
+    }, 4000);
+
+    dots.click(function () {
+        goToSlide(parseInt($(this).data('index')));
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Data Scientist", "Former Stanford Researcher", "Musician", "Geospatial Analyst", "1st Gen College Student", "ML/AI Enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
+    // typed animation
+    new Typed('.typing', {
+        strings: [
+            'ML Engineer',
+            'Geospatial Data Scientist',
+            'LLM Pipeline Builder',
+            'Former Stanford Researcher',
+            'Production AI Engineer',
+        ],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1800,
         loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
     });
+
 });
