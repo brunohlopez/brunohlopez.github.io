@@ -113,19 +113,20 @@
             <p class="block-sub">Built on my own time. The code is on GitHub.</p>
 
             <article class="proj">
-                <a class="proj-media" href="https://github.com/brunohlopez/machineLearning/tree/main/geospatial/multispectral" target="_blank" rel="noopener" aria-label="Sentinel-2 timelapse project on GitHub">
+                <a class="proj-media" href="https://github.com/brunohlopez/machineLearning/tree/main/geospatial/multispectral" target="_blank" rel="noopener" aria-label="Sentinel Flyover project on GitHub">
                     <span class="arch"><img src="images/sentinel2.gif" width="768" height="439" loading="lazy" alt="A Sentinel-2 timelapse over forest and a river, with clouds drifting through and the date shown in the corner"></span>
                 </a>
                 <div class="proj-info">
-                    <h3>Sentinel-2 timelapse and spectral indices</h3>
+                    <h3>Sentinel Flyover</h3>
                     <p>
-                        A Streamlit app where you pick a place and it builds a Sentinel-2 timelapse and computes 15 spectral
-                        indices for it. Useful for the "what changed here, and when?" questions: land use change, vegetation, water.
+                        A nonstop, full-screen flyover of live Sentinel-2 imagery, streamed straight into the browser with no
+                        server or API keys. It drops you somewhere on Earth, pans across the scene, then moves on to the next
+                        one. You can switch band composites and spectral indices, pick any place yourself, and record clips.
                     </p>
                     <dl class="specs">
-                        <div><dt>Data</dt><dd>Sentinel-2 through Google Earth Engine</dd></div>
-                        <div><dt>Output</dt><dd>Timelapse GIF and 15 spectral indices</dd></div>
-                        <div><dt>Stack</dt><dd>Python, geemap, Streamlit</dd></div>
+                        <div><dt>Data</dt><dd>Sentinel-2 L2A from the open AWS archive (Element84 Earth Search)</dd></div>
+                        <div><dt>Output</dt><dd>Band composites, 11 spectral indices and GIF/MP4 clips</dd></div>
+                        <div><dt>Stack</dt><dd>JavaScript, OpenLayers, geotiff.js, WebGL</dd></div>
                     </dl>
                     <a class="go" href="https://github.com/brunohlopez/machineLearning/tree/main/geospatial/multispectral" target="_blank" rel="noopener">View code on GitHub</a>
                 </div>
@@ -163,14 +164,13 @@
                 </article>
 
                 <article class="mini">
-                    <h3>Sentinel-2 explorer <span class="tag">in progress</span></h3>
+                    <h3>Land cover time series</h3>
                     <p>
-                        A browser-based viewer built on open Sentinel-2 data. It drops you somewhere random in the world,
-                        keeps a minimap in the corner and lets you switch bands. Next up is a nonstop mode that zooms in and
-                        pans across a whole scene before moving on to the next one.
+                        A Streamlit app where you draw an area, browse the individual Sentinel-2 and Landsat scenes over it,
+                        and chart how Dynamic World land cover changes through time.
                     </p>
-                    <p class="mini-stack">Browser based, open Sentinel-2 data</p>
-                    <!-- When this is live, add: <a class="go" href="YOUR-URL" target="_blank" rel="noopener">Try it</a> -->
+                    <p class="mini-stack">Python, Streamlit, Google Earth Engine</p>
+                    <a class="go" href="https://github.com/brunohlopez/machineLearning/tree/main/geospatial/landcover_timeseries" target="_blank" rel="noopener">View code on GitHub</a>
                 </article>
             </div>
         </div>
